@@ -1,4 +1,4 @@
 # spotify account checker
 
-set emailpassword : "x.txt"
+Set Email | Password : "x.txt"<br> 
 use $ php spotify.php
