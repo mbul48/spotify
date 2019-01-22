@@ -12,7 +12,7 @@ echo "              Spotify Checker ";
 echo "\n============================================\n";
 echo "Created by : \033[92mmbul48 \n\033[0mAPI From   : \033[95mmbul48 \033[0m\nInstagram  : @mbul48\n";
 echo "============================================\n";
-$file = file_get_contents("x.txt");
+$file = file_get_contents("list.txt");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
 for($a=0;$a<count($data);$a++){
@@ -36,7 +36,7 @@ for($a=0;$a<count($data);$a++){
 		$cek = "\033[91m [Diee] \033[0m".$cek; $mati+=1;
 	}
 	ob_flush();
-	sleep(2);
+	sleep(5);
    print($cek."\n");
 }
 	echo "============================================\n";
