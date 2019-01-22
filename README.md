@@ -1,4 +1,19 @@
-# spotify account checker
+# Spotify Account Checker
 
-Set Email | Password : "x.txt"<br> 
-use $ php spotify.php
+Detek : <br>
+ &nbsp;&nbsp; -Subscription ( Premium/Family/Free ) <br>
+ &nbsp;&nbsp; -Username <br>
+ &nbsp;&nbsp; -Expired ( Day/Month/Year ) <br>
+ &nbsp;&nbsp; -Negara <br>
+<br>
+Delim : " | " <br> 
+ &nbsp;&nbsp; cth username|password
+<br><br>
+edit name file empass jadi list.txt <br>
+<br>
+Usage :<br>
+ &nbsp;&nbsp; pkg install php <br>
+ &nbsp;&nbsp; pkg install git <br>
+ &nbsp;&nbsp; git clone https://github.com/mbul48/spotify.git <br>
+ &nbsp;&nbsp; cd spotify <br>
+ &nbsp;&nbsp; php spotify.php <br>
