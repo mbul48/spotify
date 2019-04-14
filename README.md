@@ -8,7 +8,7 @@ Detek : <br>
 <br>
 Delim : " | " <br> 
  &nbsp;&nbsp; cth username|password
-<br>
+<br><br>
 Usage :<br>
  &nbsp;&nbsp; pkg install php <br>
  &nbsp;&nbsp; pkg install git <br>
