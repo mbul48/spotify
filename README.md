@@ -8,8 +8,6 @@ Detek : <br>
 <br>
 Delim : " | " <br> 
  &nbsp;&nbsp; cth username|password
-<br><br>
-edit name file empass jadi list.txt <br>
 <br>
 Usage :<br>
  &nbsp;&nbsp; pkg install php <br>
