@@ -19,6 +19,9 @@ $apikey = trim(fgets(STDIN));
 echo "List \t\t: ";
 $list = trim(fgets(STDIN));
 
+echo "Sleep \t\t: ";
+$tidur = trim(fgets(STDIN));
+
 $file = file_get_contents("$list");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
@@ -43,7 +46,7 @@ for($a=0;$a<count($data);$a++){
 		$cek = "\033[91m [Diee] \033[0m".$cek; $mati+=1;
 	}
 	ob_flush();
-	sleep(5);
+	sleep($tidur);
    print($cek."\n");
 }
 	echo "============================================\n";
