@@ -1,20 +1,36 @@
-# Spotify Account Checker
+# Spotify Account Checker CLI
 
-Detek : <br>
- &nbsp;&nbsp; -Subscription ( Premium/Family/Free ) <br>
- &nbsp;&nbsp; -Username <br>
- &nbsp;&nbsp; -Expired ( Day/Month/Year ) <br>
- &nbsp;&nbsp; -Negara <br>
-<br>
-Delim : " | " <br> 
- &nbsp;&nbsp; cth username|password
-<br><br>
-Usage :<br>
- &nbsp;&nbsp; pkg install php <br>
- &nbsp;&nbsp; pkg install git <br>
- &nbsp;&nbsp; git clone https://github.com/mbul48/spotify.git <br>
- &nbsp;&nbsp; cd spotify <br>
- &nbsp;&nbsp; php spotify.php <br>
- <br>
-Apikey ?
-&nbsp;&nbsp;<a href="https://facebok.com/habibul.fzn">DONATE ME ! </a>
+----
+
+### Features
+
+* Subscription ( Premium, Premium For Family, Free)
+* Username Account
+* Country
+* Expired Date (DD/MM/YYYY)
+
+----
+
+### Installation
+
+```
+$ git clone https://github.com/mbul48/spotify.git
+$ cd spotify
+$ php spotify.php
+```
+
+----
+
+### Mailpass Format
+
+
+```
+email@email.com|password
+username|password
+```
+
+--------
+
+### APIKEY ?
+
+// PLEASE <a href='fb.me/habibul.fzn'>DONATE ME!</a> //
