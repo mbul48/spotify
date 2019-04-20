@@ -33,4 +33,4 @@ username|password
 
 ### APIKEY ?
 
-// PLEASE <a href='fb.me/habibul.fzn'>DONATE ME!</a> //
+// PLEASE <a href='http://fb.me/habibul.fzn'>DONATE ME!</a> //
