@@ -1,4 +1,5 @@
 <?php
+ini_set('date.timezone', 'Asia/Jakarta');
 ob_implicit_flush(true);
 error_reporting(0);
 function in_string($s,$as) {
