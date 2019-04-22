@@ -21,11 +21,11 @@ $list = trim(fgets(STDIN));
 
 echo "Sleep \t\t: ";
 $tidur = trim(fgets(STDIN));
-$date = date("h:i:sa");
 $file = file_get_contents("$list");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
 for($a=0;$a<count($data);$a++){
+	$date = date("h:i:sa");
         $data1 = explode("|",$data[$a]);
         $email = $data1[0];
         $pass = $data1[1];
