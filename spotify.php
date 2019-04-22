@@ -21,7 +21,7 @@ $list = trim(fgets(STDIN));
 
 echo "Sleep \t\t: ";
 $tidur = trim(fgets(STDIN));
-
+$date = date("h:i:sa");
 $file = file_get_contents("$list");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
@@ -41,9 +41,9 @@ for($a=0;$a<count($data);$a++){
   fwrite($h,$cek."\n");
   fclose($h);
   }
-		$cek = "\033[92m [Live] \033[0m".$cek; $live+=1;
+		echo "\033[95m [" . $date . "]\033[0m"; $cek = "\033[92m [Live] \033[0m".$cek; $live+=1;
   }else{
-		$cek = "\033[91m [Diee] \033[0m".$cek; $mati+=1;
+		echo "\033[95m [" . $date . "]\033[0m"; $cek = "\033[91m [Diee] \033[0m".$cek; $mati+=1;
 	}
 	ob_flush();
 	sleep($tidur);
