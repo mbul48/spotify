@@ -19,16 +19,6 @@ $ cd spotify
 $ php spotify.php
 ```
 
-----
-
-### Mailpass Format
-
-
-```
-email@email.com|password
-username|password
-```
-
 --------
 
 ### APIKEY ?
